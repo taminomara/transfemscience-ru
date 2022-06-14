@@ -1,0 +1,279 @@
+<!DOCTYPE HTML>
+<html lang="ru" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Внутримышечные инъекции - Transfem Hub</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><div>Предисловие</div></li><li class="chapter-item expanded affix "><li class="part-title">Эндокринология</li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.</strong> Введение, обзор, сроки</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> Эстроген</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">2.1.</strong> Таблетки</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.2.</strong> Гели и пластыри</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.3.</strong> Инъекции</div></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> Антиандрогены</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../endocrynology/antiandrogens/cyproterone.html"><strong aria-hidden="true">3.1.</strong> Ципротерона Ацетат</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.2.</strong> Бикалутамид</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.3.</strong> Спиронолактон</div></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> Прогестерон</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.</strong> Дозы</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.</strong> Риски и анализы</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">7.</strong> Подручные средства, противозачаточные</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">8.</strong> Небинарная гормонотерапия</div></li><li class="chapter-item expanded affix "><li class="part-title">Техники</li><li class="chapter-item expanded "><div><strong aria-hidden="true">9.</strong> Полезные ссылки</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">10.</strong> Анализ поставщиков</div></li><li class="chapter-item expanded "><a href="../techniques/injections.html" class="active"><strong aria-hidden="true">11.</strong> Внутримышечные инъекции</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Transfem Hub</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/taminomara/transfemscience-ru" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/taminomara/transfemscience-ru/edit/master/src/techniques/injections.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="Внутримышечные-инъекции"><a class="header" href="#Внутримышечные-инъекции">Внутримышечные инъекции</a></h1>
+<h2 id="Подготовка"><a class="header" href="#Подготовка">Подготовка</a></h2>
+<p>Вам понадобятся:</p>
+<ul>
+<li>удобное и хорошо освещённое место;</li>
+<li>чистая поверхность, например, помытая с мылом тарелка;</li>
+<li>препарат;</li>
+<li>шприц подходящего размера с зелёной или чёрной иглой 40 мм. Если берёте препарат из многоразовой виалы с резиновой мембраной — нужно две иглы, ну или два шприца;</li>
+<li>три спиртовые салфетки;</li>
+<li>контейнер для утилизации игл. Подойдёт что-то из толстого пластика или стекла. Не кладите иглы в пластиковые бутылки — они легко прокалываются;</li>
+<li>пластырь.</li>
+</ul>
+<h2 id="Куда-колоть"><a class="header" href="#Куда-колоть">Куда колоть?</a></h2>
+<p>Колоть лучше всего в попу — это самое простое и безболезненное место.</p>
+<p>Поделите полупопие на четыре части, как показано на рисунке. Горизонтальное деление проходит там, где заканчивается впадина между ягодицами. Вертикальное — примерно посередине ягодицы. Колоть нужно в центр верхнего внешнего квадранта. Получается весьма высоко и почти сбоку — это нормально; пощупайте то место — там большая и толстая мышца. Не делайте уколы в ту часть попы, на которой сидите — это намного больнее, а ещё там рядом cедалищный нерв.</p>
+<p><img src="https://user-images.githubusercontent.com/81165235/161530870-7a63953e-eb02-45eb-89ef-1131017680b2.jpg" alt="injection-site" /></p>
+<p>Перед уколом убедитесь, что рядом нет синяков или травм, опухлостей, аллергических реакций. Периодически меняйте места инъекций: чередуйте их, сдвигайтесь относительно старых уколов.</p>
+<h2 id="Как-колоть"><a class="header" href="#Как-колоть">Как колоть?</a></h2>
+<p>Перед уколом разгладьте кожу и сдвиньте её на пару сантиметров относительно мышцы, чтобы препарат не вытек обратно.</p>
+<p>Вводите шприц под углом 90 градусов; держите его, словно дротик. Движение должно быть уверенным и достаточно быстрым, однако торопиться или колоть с размаху не стоит.</p>
+<p>Не вводите иглу до конца — оставьте 5 – 10 миллиметров, чтобы случайно не сломать её у основания. Препарат выдавливайте медленно, примерно 1 мл за 10 секунд. После того, как препарат будет введён, не доставайте иглу сразу, дайте маслу распределиться в месте укола, секунд десять.</p>
+<p><img src="https://user-images.githubusercontent.com/81165235/161523182-7e203a43-6ce5-48f8-8264-d64bff744c78.jpg" alt="z-track" /></p>
+<h2 id="Как-вскрывать-ампулу"><a class="header" href="#Как-вскрывать-ампулу">Как вскрывать ампулу?</a></h2>
+<p>На всех современных ампулах уже есть надрез на шейке, он обозначен кольцом или точкой. Если такого нет — придётся подпилить шейку ампулы пилкой.</p>
+<p>Перед вскрытием протрите ампулу спиртовой салфеткой, проверьте, что в ней не плавает посторонних частиц, что препарат привычного цвета.</p>
+<p>Стряхните весь препарат из головы ампулы, вращая её и постукивая пальцем.</p>
+<p>Возьмите тело ампулы в одну руку, а голову — в другую, как показано на картинке. Если на ампуле есть точка, она должна оказаться под большим пальцем. Теперь сломайте ампулу пополам. Если она не ломается, попробуйте немного повернуть её. Чтобы не пораниться осколками, можно завернуть голову ампулы в спиртовую салфетку. Чтобы было удобнее ломать, можно прижать руки к груди или животу.</p>
+<p><img src="https://user-images.githubusercontent.com/81165235/161558568-cebe96ed-36e4-4ab2-a732-dc226f15b2fa.jpeg" alt="vial-breaking" /></p>
+<h2 id="Пошаговый-алгоритм"><a class="header" href="#Пошаговый-алгоритм">Пошаговый алгоритм</a></h2>
+<ul>
+<li>тщательно помойте руки, потрите между пальцев и под ногтями;</li>
+<li>подготовьте всё необходимое;</li>
+<li>если делаете укол кому-то — положите их на живот, если делаете себе — встаньте;</li>
+<li>найдите место, куда будете колоть, 30 секунд сильно потрите его спиртовой салфеткой, дайте спирту высохнуть;</li>
+<li>протрите руки и шейку ампулы второй спиртовой салфеткой, затем вскройте ампулу и наберите раствор в шприц;</li>
+<li>если используете многоразовую виалу — замените иглу на новую;</li>
+<li>если делаете укол себе — встаньте ровно, перенесите весь вес с ноги, над которой будете колоть, расслабьте её;</li>
+<li>положите свободную руку на место инъекции, растяните кожу пальцами, сдвиньте её немного;</li>
+<li>уверенно введите шприц под 90 градусов, оставляя 10 мм иглы на поверхности;</li>
+<li>медленно выдавите препарат, подождите 10 секунд и вытащите иглу;</li>
+<li>сбросьте иглу в контейнер, место прокола протрите третьей спиртовой салфеткой и заклейте пластырем;</li>
+<li>готово. Можно обнять ту няшу, которой делали инъекцию, или взять мягкую игрушку, если кололи сами себя :3</li>
+</ul>
+<h2 id="Гигиена-при-уколах-другому-человеку"><a class="header" href="#Гигиена-при-уколах-другому-человеку">Гигиена при уколах другому человеку</a></h2>
+<p>Когда делаете укол кому-то ещё, важно избежать контакта с кровью. Для этого нужно не уколоться и не заляпаться капельками крови, если они вытекли из места укола:</p>
+<ul>
+<li>делайте процедуру в перчатках, особенно если вокруг ногтей есть порезы или заусенцы;</li>
+<li>чтобы случайно не пораниться, не надевайте защитный колпачок обратно на иглу — сразу бросайте её в контейнер;</li>
+<li>в медицинских контейнерах для сбора острых отходов есть специальный вырез, позволяющий сбросить иглу со шприца, не касаясь её.</li>
+</ul>
+<h2 id="faq"><a class="header" href="#faq">FAQ</a></h2>
+<p><strong>Какую иглу взять?</strong></p>
+<p>Для внутримышечных уколов нужна игла длиной 40 мм. Диаметр выбирается исходя из вязкости препарата, обычно это 0.8 мм (21g, зелёная), 0.7 мм (22g, коричневая) или 0.6 мм (23g, синяя).</p>
+<p>Важно, чтобы игла была хорошо заточена, иначе укол будет болезненным. Можете купить иглы отдельно, попробуйте разных производителей. По моему опыту лучшая заточка у B.Braun, но они дорогие и есть далеко не везде.</p>
+<p><strong>Какой шприц взять?</strong></p>
+<p>Любой подходящего размера и с подходящей иглой. Обычно берут на 2 мл, так как у более мелких шприцев в комплекте более мелкие иглы.</p>
+<p>Если у вас вязкий препарат, и иглы соскакивают, ищите шприцы с коннектором «луер-лок» — это такие, на которые игла накручиватеся, а не насаживается.</p>
+<p><strong>В какой позе делать инъекции?</strong></p>
+<p>Если делаете укол себе — лучше всего встать, перенеся весь вес с ноги, над которой колете — так мышцы будут максимально расслаблены. Можно попробовать сделать укол лёжа на боку, но нужно следить, чтобы мышцы были расслаблены, не поднимать голову.</p>
+<p>Если колете кого-то другого — положите их на живот или на бок, как вам удобнее.</p>
+<p><strong>Что со стеклянными осколками ампулы в препарате?</strong></p>
+<p>Ничего: нет исследований, которые показали бы, что микрочастицы стекла, оставшиеся от вскрытия ампулы, как-то вредят здоровью. Стекло инертно, и если не вводить его в больших дозах в кровоток, не причиняет вреда.</p>
+<p>Если вы всё же тревожитесь из-за этого, можете поискать аспирационные иглы с фильтром на 5 микрометров, и забирать препарат из ампулы ими.</p>
+<p>Если вы используете многоразовые виалы, протыкайте мембрану острой иглой под 45 градусов, держа срез иглы к верху (см. <a href="https://cdn.ymaws.com/www.spineintervention.org/resource/resmgr/factfinder/FactFinder_2019_04_Vial_Cori.pdf">vial coring</a>).</p>
+<p><strong>Можно ли колоть эстрадиол подкожно?</strong></p>
+<p>Так рекомендуют делать некоторые производители инъекций и даже врачи. Это работает, но никаких исследований эффективности и безопасности на этот счёт нет. Все масляные инъекции традиционно вводятся внутримышечно, так что мы рекомендуем не отклоняться от общепринятой практики.</p>
+<p><strong>Что делать, если препарат выливается обратно?</strong></p>
+<ul>
+<li>Не вынимать иглу сразу, а подождать десять секунд, пока масло распределится по мышце.</li>
+<li>Перед уколом на пару сантиметров сдвинуть кожу относительно мышцы.</li>
+</ul>
+<p><strong>Что делать, если укол получается болезненным?</strong></p>
+<ul>
+<li>Максимально расслабить мышцы перед уколом.</li>
+<li>Вводить иглу под 90 градусов.</li>
+<li>Вводить препарат медленно — 10 секунд на 1 мл.</li>
+<li>Использовать острые иглы. Если вы берёте препарат из многоразовой виалы с резиновой мембраной, игла может слегка затупиться. Попробуйте использовать разные иглы для забора и для укола.</li>
+</ul>
+<p><strong>Как правильно утилизировать иглы?</strong></p>
+<p>Главное, чтобы вашей иглой никто не мог пораниться: ни дворники, ни животные, ищущие еду на помойках.</p>
+<p>Положите иглу в контейнер из толстого пластика, стеклянную бутылку или медицинский контейнер для острых отходов. Не кладите иглы в пластиковые бутылки — они легко прокалываются.</p>
+<p>Если в вашем городе есть организации, принимающие медицинские отходы — обратитесь к ним. Если нет — придётся выкинуть это всё в неперерабатываемый мусор. Убедитесь, что контейнер с иглой сложно открыть — например, замотайте его в пищевую плёнку. Хорошей идеей будет подписать контейнер, чтобы никто не попытался его вскрыть. Совсем замечательной идеей будет предварительно продезинфицировать иглы в <a href="https://dezr.ru/spravochnik-dezsredstv/podbor-po-parametram/rezultat-podbora?flag2=on&amp;flag10=on&amp;act_gr%5B1%5D=0&amp;act_gr%5B16%5D=0&amp;act_gr%5B15%5D=0&amp;act_gr%5B14%5D=0&amp;act_gr%5B10%5D=0&amp;act_gr%5B9%5D=0&amp;act_gr%5B8%5D=0&amp;act_gr%5B7%5D=0&amp;act_gr%5B6%5D=0&amp;act_gr%5B5%5D=0&amp;act_gr%5B4%5D=0&amp;act_gr%5B3%5D=0&amp;act_gr%5B2%5D=0&amp;act_gr%5B17%5D=0&amp;act_gr%5B11%5D=0&amp;packtype%5B2%5D=2&amp;task=find&amp;filter_type=simple&amp;70b67a223705a987e2777acbcd304258=b33163991617ae00585dcb6b2a00bbda">дезрастворе</a>.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../endocrynology/antiandrogens/cyproterone.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../endocrynology/antiandrogens/cyproterone.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </body>
+</html>
