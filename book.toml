@@ -4,3 +4,10 @@ language = "ru"
 multilingual = false
 src = "src"
 title = "Transfem Hub"
+
+[output.html]
+curly-quotes = true
+mathjax-support = true
+copy-fonts = true
+git-repository-url = "https://github.com/taminomara/transfemscience-ru"
+edit-url-template = "https://github.com/taminomara/transfemscience-ru/edit/master/{path}"
