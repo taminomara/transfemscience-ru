@@ -1,4 +1,4 @@
-name: CI
+name: book-build
 on:
   push:
     branches: [ main ]
