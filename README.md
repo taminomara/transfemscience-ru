@@ -19,3 +19,4 @@ mdbook serve --open
 
 [Rust]: https://www.rust-lang.org/tools/install
 [MDBook]: https://rust-lang.github.io/mdBook/guide/installation.html
+
