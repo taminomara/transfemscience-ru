@@ -1,4 +1,4 @@
-name: book-build
+name: book-build-and-publish
 on:
   push:
     branches: [ main ]
@@ -50,7 +50,8 @@ jobs:
     name: Publish to GitHub Pages
     runs-on: ubuntu-latest
     needs: [ tests ]
-    if: github.event_name == 'push' && startsWith(github.event.ref, 'refs/tags')
+    # if: github.event_name == 'push' && startsWith(github.event.ref, 'refs/tags')
+    if: github.ref == 'refs/heads/main'
     permissions:
       contents: write
     steps:
