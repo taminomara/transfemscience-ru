@@ -13,11 +13,12 @@
   - [Спиронолактон]() <!-- (./endocrynology/antiandrogens/spironolactone.md) -->
 - [Прогестерон]() <!-- (./endocrynology/progesterone.md) -->
 - [Дозы]() <!-- (./endocrynology/doses.md) -->
-- [Риски и анализы]() <!-- (./endocrynology/doses.md) -->
+- [Риски и анализы]() <!-- (./endocrynology/risks/README.md) -->
+  - [Если что-то пошло не так]() <!-- (./endocrynology/risks/shit-happened.md) -->
 - [Подручные средства, противозачаточные]() <!-- (./endocrynology/contraception.md) -->
 - [Небинарная гормонотерапия]() <!-- (./endocrynology/nonbinary.md) -->
 
-# Техники
+# Дополнительно
 
 - [Полезные ссылки]() <!-- (./techniques/links.md) -->
 - [Анализ поставщиков]() <!-- (./techniques/suppliers.md) -->
