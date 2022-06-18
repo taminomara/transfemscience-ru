@@ -26,6 +26,10 @@
 [SOC 8]: https://www.wpath.org/soc8
 [Transfemscience]: https://transfemscience.org/
 
+<!--
+
 ----
 
 {{ #include incl/authors.md }}
+
+-->
