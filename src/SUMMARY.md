@@ -2,7 +2,7 @@
 
 # Эндокринология
 
-- [Введение, обзор, сроки]() <!-- (./endocrynology/README.md) -->
+- [Введение, обзор, сроки](./endocrynology/README.md)
 - [Эстроген]() <!-- (./endocrynology/estrogens/README.md) -->
   - [Таблетки]() <!-- (./endocrynology/estrogens/pills.md) -->
   - [Гели и пластыри]() <!-- (./endocrynology/estrogens/gels.md) -->
