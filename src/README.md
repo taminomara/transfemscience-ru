@@ -25,3 +25,7 @@
 [SOC 7]: https://www.wpath.org/publications/soc
 [SOC 8]: https://www.wpath.org/soc8
 [Transfemscience]: https://transfemscience.org/
+
+----
+
+{{ #include incl/authors.md }}
