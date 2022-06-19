@@ -31,17 +31,18 @@
 
 Влияние на тело половые гормоны оказывают через активацию (агонизм)
 [эстрогенных рецепторов][ER] (ER), [андрогенных рецепторов][AR] (AR) и [рецепторов прогестерона][PR] (PR).
-Рецепторы, будучи активированными, регулируют экспрессию генов в ядре клетки,
+Рецепторы, будучи активированными, регулируют [экспрессию генов][gene-expression] в ядре клетки,
 приводя к формированию различных белков, клеток и тканей.
 
 Трансфеминная гормональная терапия с помощью различных препаратов
 позволяет сместить гормональный баланс с мужского на женский,
 чем обращает маскулинизацию и стимулирует феминизацию.
 
-[E2-effects]: #
-[T-effects]: #
-[P4-effects]: #
-[P4-antagonism]: #
-[ER]: #
-[AR]: #
-[PR]: #
+[E2-effects]: https://en.wikipedia.org/wiki/Pharmacodynamics_of_estradiol#Effects_in_the_body_and_brain
+[T-effects]: https://en.wikipedia.org/wiki/Testosterone_(medication)#Effects_in_the_body_and_brain
+[P4-effects]: https://en.wikipedia.org/wiki/Pharmacodynamics_of_progesterone#Effects_in_the_body_and_brain
+[P4-antagonism]: https://en.wikipedia.org/wiki/Pharmacodynamics_of_progesterone#Antiestrogenic_effects
+[ER]: https://en.wikipedia.org/wiki/Estrogen_receptor
+[AR]: https://en.wikipedia.org/wiki/Androgen_receptor
+[PR]: https://en.wikipedia.org/wiki/Progesterone_receptor
+[gene-expression]: https://en.wikipedia.org/wiki/Gene_expression
