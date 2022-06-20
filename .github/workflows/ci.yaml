@@ -38,8 +38,7 @@ jobs:
     concurrency:
       group: publish
       cancel-in-progress: true
-    permissions:
-      contents: write
+    permissions: write-all
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -62,8 +61,7 @@ jobs:
     concurrency:
       group: publish-${{ github.ref }}
       cancel-in-progress: true
-    permissions:
-      contents: write
+    permissions: write-all
     steps:
       - name: Checkout
         uses: actions/checkout@v3
