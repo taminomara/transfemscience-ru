@@ -5,9 +5,14 @@ on:
     tags: [ 'v*' ]
   pull_request:
     branches: [ main ]
+    types:
+      - opened
+      - reopened
+      - synchronize
+      - closed
 jobs:
-  tests:
-    name: Test
+  build:
+    name: Build
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -45,13 +50,15 @@ jobs:
         uses: actions/upload-artifact@master
         with:
           name: html_output
-          path: ./book
+          path: book
   publish:
     name: Publish to GitHub Pages
     runs-on: ubuntu-latest
     needs: [ tests ]
-    # if: github.event_name == 'push' && startsWith(github.event.ref, 'refs/tags')
-    if: github.ref == 'refs/heads/main'
+    if: (github.event_name == 'push' && github.ref == 'refs/heads/main')
+    concurrency:
+      group: publish
+      cancel-in-progress: true
     permissions:
       contents: write
     steps:
@@ -59,9 +66,31 @@ jobs:
         uses: actions/download-artifact@master
         with:
           name: html_output
-          path: ./book
+          path: book
       - name: Publish HTML
-        uses: peaceiris/actions-gh-pages@v3
+        uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./book
+          branch: gh-pages
+          folder: book
+          clean-exclude: pr-preview
+  preview:
+    name: Publish preview to GitHub Pages
+    runs-on: ubuntu-latest
+    needs: [ tests ]
+    if: github.event_name == 'pull_request'
+    concurrency:
+      group: publish-${{ github.ref }}
+      cancel-in-progress: true
+    permissions:
+      contents: write
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@master
+        with:
+          name: html_output
+          path: book
+      - name: Publish HTML
+        uses: rossjrw/pr-preview-action@v1
+        with:
+          source-dir: book
+          umbrella-dir: pr-preview
