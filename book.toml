@@ -11,3 +11,4 @@ mathjax-support = true
 copy-fonts = true
 git-repository-url = "https://github.com/taminomara/transfemscience-ru"
 edit-url-template = "https://github.com/taminomara/transfemscience-ru/edit/main/{path}"
+site-url = "/transfemscience-ru/" # for github pages
