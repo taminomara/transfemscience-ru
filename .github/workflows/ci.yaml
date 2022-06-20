@@ -54,7 +54,7 @@ jobs:
   publish:
     name: Publish to GitHub Pages
     runs-on: ubuntu-latest
-    needs: [ tests ]
+    needs: [ build ]
     if: (github.event_name == 'push' && github.ref == 'refs/heads/main')
     concurrency:
       group: publish
@@ -76,7 +76,7 @@ jobs:
   preview:
     name: Publish preview to GitHub Pages
     runs-on: ubuntu-latest
-    needs: [ tests ]
+    needs: [ build ]
     if: github.event_name == 'pull_request'
     concurrency:
       group: publish-${{ github.ref }}
